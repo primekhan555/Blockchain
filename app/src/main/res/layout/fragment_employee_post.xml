@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeePostFragment"
+    android:layout_margin="15dp">
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Form"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:id="@+id/linearlayout_0"
+        android:layout_below="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee id :"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/employee_id_post"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_1"
+
+        android:layout_below="@+id/linearlayout_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name :"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/fName_post"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name :"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/lName_post"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_2"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="5dp"
+        >
+        <Button
+            android:id="@+id/btn_submit_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="#2980B9"
+            android:textColor="#D0D3D4"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
